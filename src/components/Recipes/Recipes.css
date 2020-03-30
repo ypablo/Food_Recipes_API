@@ -1,0 +1,29 @@
+.rec {
+    min-height: 100vh;
+    background-color: darksalmon;
+  }
+  
+  .search-form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar {
+    width: 50%;
+    border: none;
+    padding:10px;
+  }
+  .search-button {
+    background-color: darkseagreen;
+    border: none;
+    padding: 10px 20px;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .recipes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }

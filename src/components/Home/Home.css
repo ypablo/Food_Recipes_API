@@ -1,0 +1,8 @@
+.header-hero {
+    min-height: calc(100vh - 56px);
+    background: url("../../images/homeBcg.jpeg") center/cover no-repeat;
+}
+
+.text-slanted {
+    font-family: 'Courgette', cursive;
+  }

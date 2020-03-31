@@ -1,8 +1,10 @@
 .default-hero {
-    min-height: calc(100vh - 56px);
-    background:url("../../images/defaultBcg.jpeg") center/cover no-repeat
-  }
-
-  .nounderline {
-    text-decoration: none !important
-  }
+  min-height: calc(100vh - 56px);
+  background:url("../../images/defaultBcg.jpeg") center/cover no-repeat
+}
+.nounderline {
+  text-decoration: none !important
+}
+h2 {
+  padding: 20px;
+}

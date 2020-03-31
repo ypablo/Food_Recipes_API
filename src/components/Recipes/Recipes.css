@@ -6,8 +6,8 @@
 
 .formula::after {
   content: "";
-  background: url("../../images/searchBcg.jpg") center/cover no-repeat;
-  opacity: 1;
+  background: url("../../images/searchBcg3.jpg") center/cover no-repeat;
+  opacity: 0.7;
   top:0;
   left: 0;
   right: 0;
@@ -28,15 +28,14 @@
 }
 .search-bar {
   width: 50%;
-  border: none; 
+  border: none;
+  padding:10px;
 }
-
 .search-button {
-  margin-bottom: 15px;
-}
-.nounderline {
-  text-decoration: none !important
-}
-.text-green {
-  color: #8fbc8f;
+  background-color: darkseagreen;
+  border: none;
+  padding: 10px 20px;
+  color:#fff;
+  cursor: pointer;
+  font-weight: bold;
 }

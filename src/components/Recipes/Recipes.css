@@ -1,29 +1,41 @@
-.rec {
-    min-height: 100vh;
-    background-color: darksalmon;
-  }
-  
-  .search-form {
-    min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .search-bar {
-    width: 50%;
-    border: none;
-    padding:10px;
-  }
-  .search-button {
-    background-color: darkseagreen;
-    border: none;
-    padding: 10px 20px;
-    color:#fff;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  .recipes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+.formula {
+  margin:0;
+  padding:0;
+  position: relative;
+}
+
+.formula::after {
+  content: "";
+  background: url("../../images/searchBcg3.jpg") center/cover no-repeat;
+  opacity: 0.7;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index:-1;
+}
+.search-name {
+  margin: 20px;
+}
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:5px;
+  padding: 5px;
+}
+.search-bar {
+  width: 50%;
+  border: none;
+  padding:10px;
+}
+.search-button {
+  background-color: darkseagreen;
+  border: none;
+  padding: 10px 20px;
+  color:#fff;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -33,29 +33,40 @@ const Recipes = () => {
     }
 
     return (
-        <div className="rec">
-            <form onSubmit={getSearch} className="search-form">
-                <input
-                    className="search-bar"
-                    type="text"
-                    value={search}
-                    onChange={updateSearch} />
-                <button className="search-button" type="submit">
-                    Search
-                </button>
-            </form>
-            <div className="recipes">
+        <div className="container-fluid formula">
+            <div className="row">
+                <div className="col-lg-12 col-lx-12 col-12 mx-auto col-md-12 text-center">
+                    <h1 className="text-slanted search-name">Search recipes with <strong >Edamam</strong></h1>
+                    <p className="text-slanted">type words separated by comma</p>
+                    <form onSubmit={getSearch} className="search-form">
+                        <input
+                            className="search-bar"
+                            type="text"
+                            value={search}
+                            onChange={updateSearch} />
+                        <button className="search-button" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div className="row">
                 {recipes.map((recipe, index) => (
-                    <Recipe
+                    <Recipe className="col-4 col-lg-6 col-xl-4 mx-auto"
                         key={index}
                         title={recipe.recipe.label}
+                        time={recipe.recipe.totalTime}
                         calories={recipe.recipe.calories}
                         image={recipe.recipe.image}
                         allergies={recipe.recipe.healthLabels}
-                        ingredients={recipe.recipe.ingredients} />
+                        ingredients={recipe.recipe.ingredients}
+                        source_url={recipe.recipe.url} />
                 ))}
             </div>
         </div>
+
+
+
     )
 }
 

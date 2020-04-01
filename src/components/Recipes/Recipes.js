@@ -33,15 +33,15 @@ const Recipes = () => {
         <div className="container-fluid formula">
             <div className="row">
                 <div className="col-lg-12 col-lx-12 col-12 mx-auto col-md-12 text-center">
-                    <h1 className="text-slanted search-name">Search recipes with <strong >Edamam</strong></h1>
-                    <p className="text-slanted">type words separated by comma</p>
+                    <h1 className="text-light text-slanted search-name">Search recipes with <strong className="text-green">Edamam</strong></h1>
+                    <p className="text-light text-slanted">type words separated by comma</p>
                     <form onSubmit={getSearch} className="search-form">
                         <input
                             className="search-bar"
                             type="text"
                             value={search}
                             onChange={updateSearch} />
-                        <button className="search-button" type="submit">
+                        <button className="text-uppercase bt btn-secondary btn-lg mt-3 nounderline search-button search-button" type="submit">
                             Search
                         </button>
                     </form>
